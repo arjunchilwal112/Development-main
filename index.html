@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en"> //attribute lang is for language inside
+
+<head>
+    <title> index file
+    </title>
+    <!-- INTERNAL LINKING OF CSS IN HTML USING style tag AND selectors-->
+    <!-- selecting h2 tag -->
+    <style>
+        h2 {
+            color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- INLINE LINKING OF CSS  IN HTML USING style attribute-->
+    <h1 style="color: darkcyan;"> heading with largest font </h1>
+    <h2> heading </h2>
+    <h3> heading </h3>
+    <h4> heading </h4>
+    <h5> heading </h5>
+    <h6> heading with shortest font </h6>
+
+    <p> paragraph tag </p>
+
+    <br> br tag for line Break <br> this is new line
+    <hr> // hr tag is for horizontal line // white spaces and line breaks are ignored in html doc by browser for it we have to use tags
+    <h3> hello world !</h3>
+    <p>
+        <b> Entities in HTML </b>
+    </p>
+    <br> (a) for displaying reserved characters in html like : to display h1 tag we can use entities for right arrow we use &lt; and for left arrow we use &gt;
+    <br>(b) for displaying special character <br> (c) for displaying emojis <br> (d) for displaying symbols
+    <br> displaying h1 tag &lt;&Backslash;h1 &gt;
+    <!-- comments in html -->
+    <div> abh how right the war begins the body is tired of thinking about bad thw way to win on bad 
+    is how we go to fail abhv ahvdhv ghftftg khhcgsf jhnsdjgcgjjs abghv abhay is not a good boy he has to work hard all the time but he waste a lotv of time </div>
+    <p><b>Lorem ipsum dolor sit amet. ipsum dolor sit amet consectetur adipisicing elit. Voluptas, provident</b>.
+        <i>psum dolor sit amet, consectetur adipisicing elit. Voluptatum nemo illum eos velit beatae ducimus,</i>
+        <em>emphasize text like italics text </em>
+        <small>for some small font size text</small> 10
+        <sup> 2 </sup>
+        <!--superscript tag -->log
+        <sub>10</sub> 2
+        <!--subscript tag -->saepe officia animi incidunt ab eaque maxime quaerat voluptatem consectetur autem ratione sequi vitae sunt.</p>
+    <!-- strong tag for displaying some imp thing -->
+    <strong> power quote </strong>
+    <!-- list TAGS for items in navigation bar , menu in web pages  -->
+    <!-- types of list : ordered list , description list , unordered list -->
+    <!-- ordered list <ol> - used to show things in steps / order roman order or numerical order or alphabetical order -->
+    <!-- unordered list <ul> for normal list -->
+    <hr>
+    <!--Ordered List example -->
+    <h2>ORDERED LIST</h2>
+    <ol>
+        <li>First item</li>
+        <!--list item tag li for every item-->
+        <li>Second item</li>
+        <li>Third item</li>
+        <li>Fourth tag</li>
+    </ol>
+    <!--UnOrdered List example -->
+    <h2>UNORDERED LIST</h2>
+    <ul>
+        <li>Milk</li>
+        <!--list item tag li-->
+        <li>Bread</li>
+        <li>Butter</li>
+        <li>Banana</li>
+    </ul>
+    <h2>SHOPPING LIST</h2>
+    <ul>
+        <li>BAG</li>
+        <li>CLOTHES</li>
+        <li>SHOES</li>
+        <li>PEANUT BUTTER</li>
+        <li>BANANA</li>
+        <li>COFFEE</li>
+        <li>BROWN BREAD</li>
+    </ul>
+    <h3>POWER BANANA SHAKE INGREDIENTS</h3>
+    <ol type="I">
+        <!-- Attribute type for diff types of orders like alphabetical , roman , Numerical(by default) -->
+        <!-- STEPS -->
+        <li> TWO BANANAS </li>
+        <li> PEANUT BUTTER </li>
+        <li> ALMONDS </li>
+        <li> GRINDED FLAXED SEEDS </li>
+        <li> MILK </li>
+        <!-- NESTING OF LISTS -->
+        <li> SOME FRUITS LIKE :
+            <ul>
+                <li> Mangos </li>
+                <li> Papaya </li>
+                <li> Grapes </li>
+                <li> Guava </li>
+            </ul>
+        </li>
+
+        <h4>NOW PREPARE SHAKE </h4>
+    </ol>
+    <hr>
+    <!--Some imp elements and tags -->
+    <!-- hyperlink <a> tag -->
+    <!-- syntax :   <a href ="url of website / file / any other link"> AND URL -> for giving location of anything in web (url is unique location)  AND  two types of url -> Absolute and Relative -->
+    <a href=" https://www.google.com" target="_blank"> absolute google url </a>
+    <!-- to open this url in new tab (to link external web page ) -->
+    <!-- to link our own web pages we use relative paths (current file to destination)-->
+    <hr>
+    <a href="page2.html" target="_blank"> page2 link</a>
+    <!-- to get out of a folder and reach target file from current -->
+    <!-- syntax is : <a href=" ../target file name " -->
+    <!-- to get in a folder and reach target file from current file -->
+    <!-- syntax is : <a href=" folderName/targetfileName"  -->
+
+    <!-- To attach differnt files like pdf files , jpg file etc.-->
+    <a href="https://th.bing.com/th/id/R9945aace283f7326a159318980556abf?rik=kdwNUWvADf%2bBpg&riu=http%3a%2f%2fintellectasrl.com%2fwp-content%2fuploads%2fMahabharat-video.jpg&ehk=Hr%2bHOawPTcg8ggol9tkaY%2fKxjcHuHaQSe7qrlC5%2bB1Y%3d&risl=&pid=ImgRaw " target="_blank">
+        <h2>Arjuna Image </h2>
+    </a>
+    <a href="Pdf files/abhayj cv.pdf" target="_blank">
+        <h3>Abhay CV</h3>
+    </a>
+    <hr>
+    <img src="image/fortnite-marvel-iron-man-mp.jpg" alt="This image is not available" width="360" height="240">
+    <hr>
+    <video src="video/videoplayback (2).mp4 " width="400" controls loop poster="image/mahabharat.jpg"></video>
+    <!--autoplay attribute soon as open browser video plays-->
+    <!-- muted attribute no audio initially-->
+    <!-- using iframe tag we can display other websites in our websites (embeding)-->
+    <hr>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/9ZihH_7oeOg" title="Youtube Video Embedded" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+    <iframe src="https://www.codechef.com" width="500" height="300" frameborder="0"></iframe>
+    <!-- TABLE -->
+    <table>
+        <thead>
+            <tr>
+                <th>Ipl Qualified Teams</th>
+                <th>Points</th>
+                <th>Win</th>
+                <th>Lose</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Kolkata Knight Riders</td>
+                <td>18 </td>
+                <td> 9</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Royal Challengers Banglore</td>
+                <td>16 </td>
+                <td> 8</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Royal Rajasthan</td>
+                <td>16 </td>
+                <td> 8</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Chennai Super Kings</td>
+                <td>14 </td>
+                <td> 7</td>
+                <td>5</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="2">Quarter Final One</th>
+                <th colspan="2">KKR VS RCB</th>
+
+            </tr>
+            <tr>
+                <th colspan="2">Quarter Final Two </th>
+                <th colspan="2">RR VS CSK</th>
+            </tr>
+        </tfoot>
+    </table>
+    <hr>
+    <table>
+        <tr>
+            <th>Month</th>
+            <th>Savings</th>
+            <th>Savings Total</th>
+        </tr>
+        <tr>
+            <td>january</td>
+            <td>$100</td>
+            <!-- in upper row mention it now content is in centre and two rows area is combined -->
+            <th rowspan=" 2 ">$150</th>
+        </tr>
+        <tr>
+            <td>feb</td>
+            <td>$50</td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="formCss.css">
+</head>
+
+<body>
+    <!--Different input types-->
+    <!--  <form action=" " method="get ">
+         using get method the entered data will be finally encoded in the url (for normal less secured data) 
+         (post method for more secure data)
+        <p>
+            NAME : <input type="text " name="fname ">
+            <br>
+            <br>
+            <input type="submit " value="submit ">
+            <input type="reset " value="reset ">
+        </p>
+        <p>
+            GENDER :
+            <br>
+            <input type="radio " name="gender " value="male ">Male
+            <br>
+            <input type="radio " name="gender " value="female ">Female
+        </p>
+        <p>
+            PASSWORD : <input type="password " name="password ">
+        </p>
+        <p> Select a vehicle :
+            <br>
+            <input type="checkbox " name="vehicle ">I have a bike
+            <br>
+            <input type="checkbox " name="vehicle ">I have a car
+            <br>
+            <input type="checkbox " name="vehicle ">I have a cycle
+        </p>
+        <p>
+            Upload A File :
+            <input type="file " name="file ">
+            <br>
+            <input type="submit " value="Submit ">
+        </p>
+        <p>
+            Enter Roll.no : <input type="number " name="no ">
+            <br>
+            <input type="image " name=" Go ">
+        </p>
+        <p> Address :
+            <textarea cols="30 " rows="6 "></textarea>
+            <br>
+            <input type="submit " name="Submit ">
+        </p>
+        <p> Choose a subject :
+            <select>
+                <option value=" "> --Select A Subject-- </option>
+                <option value="english ">English</option>
+                <option value="maths ">Maths</option>
+                <option value="chemistry ">Chemistry</option>
+            </select>
+            <br>
+            <input type="submit " value="Submit ">
+        </p>
+        <hr>
+        <br>
+
+        </form>   -->
+    <div class="containerforform">
+        <form action=" " method="get ">
+            <h1 class="mainhead">PAYMENT FORM</h2>
+                <p> Required Fields are followed by *</p>
+                <h2 class="mainhead">User Information</h3>
+
+                    <div> Name : *<input type="text" placeholder="Abhay" name="NAME " required></div>
+                    <br>
+                    <fieldset>
+                        <legend>Gender : *</legend>
+                        <p>
+                            <input type="radio" name="Gender " id="gender" required>Male
+                            <input type="radio" name="Gender " id="gender" required>Female
+                        </p>
+                    </fieldset>
+
+                    <p>
+                        Address :
+                        <textarea cols="50" rows="8" placeholder="Enter Your Address" name="address" id="address ">
+                </textarea>
+                    </p>
+                    <p>
+                        Email : *
+                        <input type="email" placeholder="abhayaj123@gmail.com" name=" email " id="Email " required>
+                    </p>
+                    <p> Pincode : *
+                        <input type="number" placeholder="123456 " name=" pincode " id="pin " required>
+                    </p>
+                    <h2 class="mainhead">Payment Details</h2>
+                    <p>
+                        Card Type : *
+                        <select name="Card_type " id="ctype " required>
+                <option value=" ">--Select A Card Type--</option>
+                <option value="rupay">Rupay</option>
+                <option value="mastercard">Mastercard</option>
+                <option value="visa">Visa</option>
+             </select>
+                    </p>
+                    <p> Card No. : *
+                        <input type="number" placeholder="1111-2222-3333-4444 " name="cno " required>
+                    </p>
+                    <p> Expiration Date : *
+                        <input type="date" name="Exp_date " required>
+                    </p>
+                    <p> CVV : * <input type="password" placeholder="123 " name="cvv_no " required>
+                    </p>
+                    <input type="submit" value="Pay Now">
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Flexbox</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 20px;
+            padding: 0 30px 30px 0;
+            line-height: 1.4;
+        }
+        
+        .flex-container {
+            display: flex;
+            border: 5px solid slateblue;
+            flex-wrap: wrap;
+            flex-direction: row;
+            /* justify-content: center; */
+            /* align-items: center;
+            Also divides space and provide space in bw also (space is maintained)*/
+            align-content: space-between;
+            /* provides no space */
+            /*for using stretch value exact/fixed height of boxes should be removed*/
+            margin: auto;
+            width: 90%;
+            height: 500px;
+            background-color: deepskyblue;
+            /*shorthand prop(for flex-container) combn of flex-direction and flex-wrap */
+            flex-flow: row wrap;
+        }
+        
+        .flex-item {
+            width: 100px;
+            height: 100px;
+            border: 2px solid darkblue;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+            line-height: 1.4;
+            font-size: 2em;
+        }
+        
+        #flex-item-1 {
+            flex-basis: 200px;
+            /* max-width of flex-item */
+            background-color: rgb(30, 210, 147);
+            align-self: flex-end;
+            /* can over ride align-items*/
+        }
+        
+        #flex-item-2 {
+            background-color: grey;
+            flex-grow: 2;
+            /*relatively shrinks faster*/
+            /* inc its width 2 times relative to other flex-items*/
+        }
+        
+        #flex-item-3 {
+            background-color: lightpink;
+            order: 5;
+            /*The order property specifies the order of a flexible item relative to the rest of the flexible items inside the same container.(default value 0)
+             greater the order the more back the element is */
+        }
+        
+        #flex-item-4 {
+            background-color: green;
+            flex-grow: 4;
+        }
+        
+        #flex-item-5 {
+            background-color: rgb(8, 121, 208);
+            order: 7;
+        }
+        
+        #flex-item-6 {
+            background-color: rgb(208, 88, 8);
+            flex-shrink: 3;
+            /*comment flex-wrap: wrap; to see it properly*/
+        }
+        
+        #flex-item-7 {
+            background-color: rgb(131, 208, 8);
+            /* shorthand prop for items*/
+            flex: 4 2 250px;
+        }
+        /*
+        #flex-item-8 {
+            background-color: rgb(191, 8, 208);
+        }
+        
+        #flex-item-9 {
+            background-color: rgb(235, 156, 53);
+        }
+        
+        #flex-item-10 {
+            background-color: rgb(208, 8, 8);
+        }
+        
+        */
+        
+        */
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="flex-item" id="flex-item-1">1</div>
+        <div class="flex-item" id="flex-item-2">2</div>
+        <div class="flex-item" id="flex-item-3">3</div>
+        <div class="flex-item" id="flex-item-4">4</div>
+        <div class="flex-item" id="flex-item-5">5</div>
+        <div class="flex-item" id="flex-item-6">6</div>
+        <div class="flex-item" id="flex-item-7">7</div>
+        <!--<div class="flex-item" id="flex-item-8">8</div>
+    <div class="flex-item" id="flex-item-9">9</div>
+    <div class="flex-item" id="flex-item-10">10</div> -->
+    </div>
+</body>
+
+</html>
